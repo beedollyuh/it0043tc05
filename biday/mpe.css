@@ -1,0 +1,94 @@
+
+.flex-container {
+    display: flex;
+    border: 2px solid gray;
+    row-gap: 20px;
+    column-gap: 50px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 40px;
+}
+
+img{
+    width: 100%;
+}
+.box {
+    width: 250px;
+    border: 3px solid grey;
+    flex-grow: 1;
+}
+
+#box1{
+ background-color: skyblue;
+ border-color: rgb(126, 183, 206);
+} 
+#box2{
+    background-color: greenyellow;
+    border-color: rgb(155, 230, 42);
+}
+#box3{
+    background-color: pink;
+    border-color: rgb(235, 177, 187);
+}
+#box4{
+    background-color: rgb(117, 166, 221);
+    border-color: rgb(106, 150, 201) ;
+}
+#box5{
+    background-color: blueviolet;
+    border-color: rgb(114, 36, 187);
+}
+#box6{
+    background-color: coral;
+    border-color: rgb(214, 106, 67);
+}
+#box7{
+    background-color: burlywood;
+    border-color: rgb(180, 150, 110);
+}
+#box8{
+    background-color: blue;
+    border-color: rgb(1, 1, 214);
+}
+
+#box9{
+    background-color: bisque;
+    border-color: rgb(209, 187, 161);
+}
+#box10{
+    background-color: yellowgreen;
+    border-color: rgb(126, 168, 41);
+}
+#box11{
+    background-color: yellow;
+    border-color: rgb(214, 214, 1);
+}
+#box12{
+    background-color: rgb(173, 115, 88);
+    border-color: rgb(136, 91, 70);
+}
+
+@media screen and (max-width: 800px){
+    
+    .box {
+        width: 90%;
+        border: 3px solid grey;
+        flex-grow: 1;
+    }
+    .flex-container {
+        display: flex;
+        border: 2px solid gray;
+        row-gap: 20px;
+        column-gap: 50px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 10px;
+        padding: 40px;
+    }
+    img{
+        width: 25%;
+    }
+}
