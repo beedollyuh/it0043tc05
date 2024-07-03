@@ -5,7 +5,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-image: url(bg+toh.webp);
     background-position: 50%;
     display: flex;
@@ -21,10 +22,10 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:#5C4033;
+    background-color: #5C4033;
     padding: 1rem;
     font-family: "Anton", sans-serif;
-    
+
     background-position: center;
     background-size: cover;
 }
@@ -52,41 +53,49 @@ body{
 
 .highlight {
     display: flex;
-   
-   
+
+
 }
 
 .highlight img {
     width: 30%;
     margin-left: 40%;
- 
+
 }
 
 .highlight-text {
     max-width: 50%;
-    font-family: "Anton" , sans-serif;
+    font-family: "Anton", sans-serif;
     text-align: center;
     margin-left: 24%;
     font-size: x-large;
     color: #5C4033;
+    text-shadow: 0px 0px 5px white;
+}
+
+.deco {
+    color: rgb(92, 70, 202);
 }
 
 .main {
     max-width: 50%;
     margin: auto;
     text-align: center;
-    font-size:xx-large;
-    color:#5C4033;
+    font-size: xx-large;
+    color: #5C4033;
     font-family: "Anton", sans-serif;
+    text-shadow: 0px 0px 5px white;
 }
-.banner{
+
+.banner {
     max-width: 50%;
     margin: auto;
     text-align: center;
-    font-size:xx-large;
-    color:#5C4033;
+    font-size: xx-large;
+    color: #5C4033;
     font-family: "Anton", sans-serif;
 }
+
 .mc {
     display: flex;
     flex-wrap: wrap;
@@ -107,9 +116,12 @@ body{
     text-align: center;
     transition: transform 0.5s;
     background-image: url(Namecard_Background_Travel_Notes_Fading_Star.webp);
-    
+    font-weight: bold;
+    text-shadow: 0px 0px 5px white;
+
 }
-#characters{
+
+#characters {
     flex: 1 1 20%;
     width: auto;
     border: 2px;
@@ -121,8 +133,9 @@ body{
 .character:hover {
     transform: scale(1.05);
 }
+
 #characters :hover {
-    transition: transform 0.5s;
+
     transform: scale(1.05);
 }
 
@@ -132,6 +145,7 @@ body{
     height: auto;
     border: 2px solid #ddd;
     background-color: goldenrod;
+
 }
 
 #charimg {
@@ -139,89 +153,142 @@ body{
     height: auto;
     border: 5px groove #ddd;
     flex: 1 1 20%;
+    transition: transform 0.5s;
 }
 
 .title {
     width: 100%;
-}
-#characters {
-    width: 20%;
-    
+    padding-bottom: 30px;
 }
 
+#characters {
+    width: 20%;
+
+}
 
 .char1 img {
     background-color: purple;
 }
+
 .char2 img {
     background-color: green;
 }
-.char3 img{
+
+.char3 img {
     background-color: purple
 }
-.char4 img{
+
+.char4 img {
     background-color: blue
 }
-.char5 img{
+
+.char5 img {
     background-color: blue;
 }
 
-.banner-characters, .upcoming-event, .new-weapons, .recent-news {
+.banner-characters,
+.upcoming-event,
+.new-weapons,
+.recent-news {
     text-align: center;
-    /* margin: 2rem 0; */
- 
+    margin: 2rem 0;
+
 }
 
-.banner-characters{
+.banner-characters {
     color: #5C4033;
-    
-}
-.upcoming-event img{
- width: 55%;
- padding: 3.5%;
- background-image: url(event.png);
- background-size: cover;
+    text-shadow: 0px 0px 5px white;
+    display: flex;
 
 }
-.upcoming-event{
+
+#characters p {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.upcoming-event img {
+    width: 55%;
+    padding: 3.5%;
+    margin: 15px;
+    background-image: url(event.png);
+    background-size: cover;
+    transition: transform 0.5s;
+
+}
+
+.upcoming-event {
     font-family: "Anton", sans-serif;
     color: #5C4033;
     font-size: larger;
+    text-shadow: 0px 0px 5px white;
+
 }
-.upcoming-event img:hover{
+
+.upcoming-event img:hover {
     transform: scale(1.05);
     transition: transform 0.5s;
 }
-.new-weapons{
+
+.new-weapons {
     font-family: "Anton", sans-serif;
     color: #5C4033;
+    display: flex;
+    flex-direction: column;
 }
-.new-weapons img{
-    width: 14%;
-   background-position: center;
+
+.weaponsTitle {
+    margin: 20px;
+}
+
+.weapons {
+    display: flex;
+    flex-direction: row;
+}
+
+#weapon {
+    width: 50%;
+}
+
+.new-weapons img {
+    width: 30%;
+    background-position: center;
     border-radius: 70%;
     background-image: url(event.png);
- background-size:700%;
- background-repeat: no-repeat;
+    background-size: 700%;
+    background-repeat: no-repeat;
 }
-.rec{
+
+.rec {
     font-family: "Anton", sans-serif;
     color: #5C4033;
     font-size: xx-large;
-}
-.recent-news{
-    color: #5C4033;
-    font-size: x-large;
-}
-.recent-news img{
-    width: 30%;
-    align-items: center;
-    box-shadow: 5px 5px 5px black;
-    border-radius: 10px;
     
 }
 
-.recent-news img:hover{
+.recent-news {
+    color: #5C4033;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 0px 0px 5px white;
+}
+
+.recent-news a {
+    padding: 10px;
+}
+
+.recent-news img {
+    width: 40%;
+    transition: transform 0.5s;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+
+}
+
+.recent-news img:hover {
     transform: scale(1.05);
     transition: transform 0.5s;
 }
@@ -232,7 +299,7 @@ body{
         flex-direction: column;
     }
 
-    
+
 
     .highlight img,
     .highlight-text {
