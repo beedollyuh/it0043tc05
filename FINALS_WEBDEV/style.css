@@ -21,7 +21,7 @@ body {
 }
 
 #header {
-    background: #5C4033;
+    background:#5C4033;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -74,6 +74,7 @@ section {
 section h2 {
     font-size: 36px;
     margin-bottom: 20px;
+    margin-bottom: 3%;
 }
 
 .home-content {
@@ -223,6 +224,7 @@ section h2 {
     cursor: pointer;
     transition: background-color 0.3s;
     border-radius: 100%;
+    font-family: 'genshin';
 }
 
 .projectt button {
@@ -234,10 +236,17 @@ section h2 {
     cursor: pointer;
     transition: background-color 0.3s;
     border-radius: 100%;
+    font-family: 'genshin';
 }
 
 .project button:hover {
     background-color:#dcb37b;
+    color: #5C4033;
+}
+
+.projectt button:hover {
+    background-color:#dcb37b;
+    color: #5C4033;
 }
 
 .project:hover {
