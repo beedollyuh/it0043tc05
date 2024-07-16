@@ -413,6 +413,11 @@ footer {
     font-family: 'genshin';
 }
 
+#header p{
+    font-family: 'genshin';
+    
+}
+
 @media (max-width: 850px) {
     
     #home {
